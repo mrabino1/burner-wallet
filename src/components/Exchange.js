@@ -632,7 +632,7 @@ export default class Exchange extends React.Component {
                   <div className="input-group-prepend">
                     <div className="input-group-text">$</div>
                   </div>
-                  <input type="text" className="form-control" placeholder="0.00" value={this.state.amount}
+                  <input type="number" className="form-control" placeholder="0.00" value={this.state.amount}
                          onChange={event => this.updateState('amount', event.target.value)} />
                 </div>
                 </Scaler>
@@ -756,7 +756,7 @@ export default class Exchange extends React.Component {
                     <div className="input-group-prepend">
                       <div className="input-group-text">$</div>
                     </div>
-                    <input type="text" className="form-control" placeholder="0.00" value={this.state.amount}
+                    <input type="number" className="form-control" placeholder="0.00" value={this.state.amount}
                            onChange={event => this.updateState('amount', event.target.value)} />
                   </div>
                   </Scaler>
@@ -939,7 +939,7 @@ export default class Exchange extends React.Component {
                 <div className="input-group-prepend">
                   <div className="input-group-text">$</div>
                 </div>
-                <input type="text" className="form-control" placeholder="0.00" value={this.state.amount}
+                <input type="number" className="form-control" placeholder="0.00" value={this.state.amount}
                        onChange={event => this.updateState('amount', event.target.value)} />
               </div>
               </Scaler>
@@ -1015,7 +1015,7 @@ export default class Exchange extends React.Component {
                 <div className="input-group-prepend">
                   <div className="input-group-text">$</div>
                 </div>
-                <input type="text" className="form-control" placeholder="0.00" value={this.state.amount}
+                <input type="number" className="form-control" placeholder="0.00" value={this.state.amount}
                        onChange={event => this.updateState('amount', event.target.value)} />
               </div>
               </Scaler>
@@ -1131,7 +1131,7 @@ export default class Exchange extends React.Component {
                 <div className="input-group-prepend">
                   <div className="input-group-text">$</div>
                 </div>
-                <input type="text" className="form-control" placeholder="0.00" value={this.state.amount}
+                <input type="number" className="form-control" placeholder="0.00" value={this.state.amount}
                        onChange={event => this.updateState('amount', event.target.value)} />
               </div>
               </Scaler>
@@ -1250,7 +1250,7 @@ export default class Exchange extends React.Component {
                 <div className="input-group-prepend">
                   <div className="input-group-text">$</div>
                 </div>
-                <input type="text" className="form-control" placeholder="0.00" value={this.state.amount}
+                <input type="number" className="form-control" placeholder="0.00" value={this.state.amount}
                        onChange={event => this.updateState('amount', event.target.value)} />
               </div>
               </Scaler>
@@ -1596,7 +1596,7 @@ export default class Exchange extends React.Component {
               <div className="input-group-prepend">
                 <div className="input-group-text">$</div>
               </div>
-              <input type="text" className="form-control" placeholder="0.00" value={this.state.daiSendAmount}
+              <input type="number" className="form-control" placeholder="0.00" value={this.state.daiSendAmount}
                      onChange={event => this.updateState('daiSendAmount', event.target.value)} />
             </div>
             <button style={this.props.buttonStyle.primary} disabled={buttonsDisabled} className={`btn btn-success btn-lg w-100 ${this.state.canSendDai ? '' : 'disabled'}`}
